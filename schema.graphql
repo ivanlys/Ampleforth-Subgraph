@@ -1,0 +1,12 @@
+type _AdminChanged @entity {
+  id: ID!
+  count: BigInt!
+  previousAdmin: Bytes! # address
+  newAdmin: Bytes! # address
+}
+
+type _Upgraded @entity {
+  id: ID!
+  count: BigInt!
+  implementation: Bytes! # address
+}
